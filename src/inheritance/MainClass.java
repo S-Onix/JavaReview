@@ -5,5 +5,6 @@ public class MainClass {
 		Child child = new Child();
 		
 		System.out.println(child.getMamiName() + " " + child.getPapaName() + " " + child.cStr);
+		System.out.println(child.getSisName());
 	}
 }

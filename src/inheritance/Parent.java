@@ -10,4 +10,7 @@ public class Parent {
 	public String getMamiName() {
 		return "홍길순";
 	}
+	public String getSisName() {
+		return "홍순자";
+	}
 }

@@ -9,5 +9,11 @@ public class Child extends Parent{
 		// TODO Auto-generated constructor stub
 	}
 	
+	@Override
+	public String getSisName() {
+		// TODO Auto-generated method stub
+		return "홍순길";
+	}
+	
 	
 }
