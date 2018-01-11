@@ -16,6 +16,7 @@ public class StoreNum2 extends HeadQuarterStore{
 	}
 	@Override
 	public void orderMethod5() {
+		super.orderMethod5();
 		System.out.println("2공기밥  : 무료");
 	}
 	

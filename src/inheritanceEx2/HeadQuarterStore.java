@@ -3,6 +3,11 @@ package inheritanceEx2;
 public class HeadQuarterStore {
 	
 	
+	
+	
+	public HeadQuarterStore() {
+		System.out.println("부모클래스");
+	}
 	public void orderMethod1() {
 		System.out.println("0김치찌개  : 5000");
 	}

@@ -10,6 +10,7 @@ public class MainClass {
 		num1.orderMethod1();
 		num2.orderMethod1();
 		num3.orderMethod1();
+		num2.orderMethod5();
 		
 	}
 }
