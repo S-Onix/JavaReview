@@ -9,20 +9,10 @@ public class LowRobot extends Robot{
 	}
 
 	@Override
-	public void actionFly() {
+	public void shape() {
 		// TODO Auto-generated method stub
-		System.out.println("can fly");
+		System.out.println("Low Robot : arm, leg, body, head");
+		
 	}
-	@Override
-	public void actionMissile() {
-		// TODO Auto-generated method stub
-		System.out.println("can shot missile");
-	}
-	@Override
-	public void acitonKnife() {
-		// TODO Auto-generated method stub
-		System.out.println("no have knife");
-	}
-	
 
 }

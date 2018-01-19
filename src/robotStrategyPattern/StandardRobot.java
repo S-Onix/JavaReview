@@ -2,27 +2,20 @@ package robotStrategyPattern;
 
 public class StandardRobot extends Robot{
 
+
 	public StandardRobot() {
 		super();
 		// TODO Auto-generated constructor stub
+		
+		
+		
 	}
 
-	@Override
-	public void actionFly() {
+	public void shape() {
 		// TODO Auto-generated method stub
-		System.out.println("can not fly");
-	}
-
-	@Override
-	public void actionMissile() {
-		// TODO Auto-generated method stub
-		System.out.println("can shot missile");
+		System.out.println("Standard Robot : arm, leg, body, head");
 	}
 	
-	@Override
-	public void acitonKnife() {
-		// TODO Auto-generated method stub
-		System.out.println("have wood knife");
-	}
+	
 }
 
