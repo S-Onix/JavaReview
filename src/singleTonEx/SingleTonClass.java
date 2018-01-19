@@ -1,7 +1,7 @@
 package singleTonEx;
 
 public class SingleTonClass {
-	private static SingleTonClass SINGLETON_CLASS_INSTANCE = new SingleTonClass();
+	private static SingleTonClass SINGLETON_CLASS_INSTANCE;
     public int i = 10;
 
     private SingleTonClass(){
