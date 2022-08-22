@@ -24,9 +24,20 @@ public class LinkedListImpl<T> {
 	
 	public Node<T> insertElement(int position, T data) {
 		int tempCnt = 0;
+		
+		if(position < 0 || count > position) {
+			return null;
+		}
+		
+		if(position == 0) {
+			head = new Node<T>(data);
+			count++;
+			return head;
+		}
+		
 		Node<T> curNode = head;
 		
-		while(tempCnt != position) {
+		while(tempCnt < position) {
 			curNode = curNode.next;
 			tempCnt++;
 		}
@@ -37,7 +48,39 @@ public class LinkedListImpl<T> {
 		insertNode.next = tempNode;
 		curNode.next = insertNode;
 		
+		count++;
+		
 		return insertNode;
+	}
+	
+	public Node<T> removeElement(int position) {
+		int tempCnt = 0;
+		
+		if(position < 0 || position > count) {
+			return null;
+		}
+		
+		if(position == 0) {
+			Node<T> temp = head;
+			head = temp.next;
+			count--;
+			return temp;
+		}
+		
+		Node<T> curNode = head;
+		while(tempCnt < position) {
+			 curNode = curNode.next;
+			 tempCnt++;
+		}
+		
+		Node<T> tempNode = curNode.next;
+		curNode.next = null;
+		curNode.next = curNode.next.next;
+		
+		count--;
+		
+		
+		return tempNode;
 	}
 
 }
